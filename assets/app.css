@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+body {
+  background-color: #141414;
+  font-family: 'Montserrat', sans-serif;
+
+}
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .adder {
+    position: relative;
+    width: 450px;
+    margin: 0px auto;
+    display: block;
+
+    }
+    .adder ::-webkit-input-placeholder {
+      color: #696969;
+    }
+    .input {
+      outline: none;
+      border: 1px solid rgb(73, 73, 73);
+      background-color: rgb(234, 234, 255);
+      color: rgb(0, 0, 0);
+      font-family: 'Montserrat', sans-serif;
+      height: 50px;
+      width: 470px;
+      padding-left: 10px;
+      font-weight: 500;
+      font-size: 16px;
+      margin-left: -5px;
+    }
+    span {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 50px;     
+      line-height: 1;
+      cursor: pointer;
+      transition: all 500ms;
+      color: rgb(212, 60, 192);
+      will-change: contents;
+    }
+    ul li.checked {
+      background: #b500bb;
+      color: #fff;
+      text-decoration: line-through;
+    }
+    .close {
+      display: none;
+    }
+    span:hover{
+      transform: rotate(180deg);
+    }
+ 
+  ul {
+    padding: 0px;
+  }
+
+  .draggable {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    height: 50px;
+    list-style-type: none;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 350px;
+    line-height: 3.2;
+    padding-left: 10px;
+    cursor: move;
+    transition: all 200ms;
+    user-select: none;
+    margin: 10px auto;
+    position: relative;
+  }
+  .draggable:after {
+
+    right: 7px;
+    font-size: 10px;
+    position: absolute;
+    cursor: pointer;
+    line-height: 5;
+    opacity: 1;
+  } 
+  .draggable:hover {
+      opacity: 0.7;
+      transform: translate(0);
+}
+.over {
+  transform: scale(1.1, 1.1);
+}
